@@ -1,3 +1,31 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class = 'page-header'>
+<h1>Sign up</h1>
 
+<div class = 'content'>
+
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages' %>
+  <div class="form-stacked">
+	  <div class="field">
+	    <%= f.label :name %>
+	    <%= f.text_field :name %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :email %>
+	    <%= f.text_field :email %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :password %>
+	    <%= f.password_field :password %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :password_confirmation, "Confirmation" %>
+	    <%= f.password_field :password_confirmation %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit "Sign up" %>
+	  </div>
+  </div>
+<% end %>
+</div>
+</div>

@@ -36,7 +36,6 @@ describe User do
     long_user = User.new(@attr.merge(:name => long_name))
     long_user.should_not be_valid
   end
-     
   
   it "should require an email address" do
       no_email_user = User.new(@attr.merge(:email => ""))
@@ -128,6 +127,9 @@ describe User do
           matching_user = User.authenticate(@attr[:email], @attr[:password])
           matching_user.should == @user
         end
+        
+        
+        
       end
       
     end

@@ -56,7 +56,7 @@ margin: -20px -20px 20px;
 /* Styles you shouldn't keep as they are for displaying this base example only */
 .content .span10,
 .content .span4 {
-min-height: 500px;
+min-height: 50px;
 }
 /* Give a quick and non-cross-browser friendly divider */
 .content .span4 {
@@ -130,7 +130,8 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  background: #fff;
+  margin-top: 15px;
 }
 
 .profile img.gravatar {
@@ -138,3 +139,86 @@ td.sidebar {
   margin-bottom: -15px;
 }
 
+.form-stacked {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.form-stacked .field label {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  
+}
+
+div.actions {
+  margin-bottom: 10px;
+  length: 30px;
+}
+
+.navbar .btn, .navbar .btn-group {
+  margin-bottom: 0;
+  margin-top: 1px;
+  vertical-align: top;
+  padding-bottom: 3px;
+}
+
+.item img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.item.active {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+div.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.span10 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
